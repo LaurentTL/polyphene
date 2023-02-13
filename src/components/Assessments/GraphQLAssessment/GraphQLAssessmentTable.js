@@ -4,16 +4,17 @@ import GET_CAKES from '../../../graphql/query/query';
 
 export default function GraphQLAssessmentTable() {
 
-    const { loading, error, data } = useQuery(GET_CAKES);
-
-    if (loading) return 'Loading...';
-    if (error) return `Error! ${error.message}`;
-
     const [search, setSearch] = useState('');
 
     const handleSearch = (searchValue) => {
         setSearch(searchValue);
     };
+    
+    const { loading, error, data } = useQuery(GET_CAKES);
+
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+
 
     return (
         <>
