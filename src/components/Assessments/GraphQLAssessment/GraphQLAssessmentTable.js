@@ -1,15 +1,14 @@
-import React from 'react';
-// import { useState } from 'react';
+import { useState } from 'react';
 import { gql, useQuery } from '@apollo/client';
 
 const GET_CAKES = gql`
 query GetCakes {
-  cakes {
-    description
-    id
-    image
-    title
-  }
+    cakes {
+        description
+        id
+        image
+        title
+    }
 }`
 
 export default function GraphQLAssessmentTable() {
@@ -19,45 +18,44 @@ export default function GraphQLAssessmentTable() {
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
 
-    // const [search, setSearch] = useState('');
+    const [search, setSearch] = useState('');
 
-    // const handleSearch = (searchValue) => {
-    //   setSearch(searchValue);
-    //   console.log(search);
-    // };
+    const handleSearch = (searchValue) => {
+        setSearch(searchValue);
+    };
 
     return (
         <>
-        {/* <input 
+        <input 
             type="text"
             value={search}
             onChange={(e) => handleSearch(e.target.value)}
             placeholder="Search for a cake"
-        /> */}
-        <table id="reduxAssessmentTable">
+        />
+        <table id="reduxAssessmentTable" className='min-w-[400px] max-w-[550px]'>
             <thead>
             <tr>
-                <th>Type</th>
-                <th>Description</th>
-                <th>Image</th>
+                <th className='bg-blue-400 text-white text-center border border-solid border-white'>Cake</th>
+                <th className='bg-blue-400 text-white text-center border border-solid border-white'>Description</th>
+                <th className='bg-blue-400 text-white text-center border border-solid border-white'>Preview</th>
             </tr>
             </thead>
             <tbody>
             {
                 data.cakes
-                // .filter(val => {
-                //     if (search == '') {
-                //         return val;
-                //     } else (val.name.toLowerCase().includes(search.toLowerCase())) {
-                //         return val;
-                //     }
-                    
-                // })
+                .filter(cake => 
+                    Object.values(cake).join('').toLowerCase().includes(search.toLowerCase())
+                )
                 .map(cake => 
-                    <tr key={cake.id}>
-                        <td>{cake.title}</td>
+                    <tr 
+                        className={ cake.id % 2 === 0 ? `${ 'bg-blue-200' }` : {} }
+                        key={cake.id}
+                    >
+                        <td className='w-1/4'>{cake.title}</td>
                         <td>{cake.description}</td>
-                        <td><img src={cake.image} alt={cake.title} className="w-12 aspect-auto" /></td>
+                        <td className='w-1/4'>
+                            <img src={cake.image} alt={cake.title} className="aspect-auto" />
+                        </td>
                     </tr>
                 )
             }
