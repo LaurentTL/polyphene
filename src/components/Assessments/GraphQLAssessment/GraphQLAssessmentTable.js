@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React from 'react';
+// import { useState } from 'react';
 import { gql, useQuery } from '@apollo/client';
 
 const GET_CAKES = gql`
@@ -18,21 +19,21 @@ export default function GraphQLAssessmentTable() {
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
 
-    const [search, setSearch] = useState('');
+    // const [search, setSearch] = useState('');
 
-    const handleSearch = (searchValue) => {
-      setSearch(searchValue);
-      console.log(search);
-    };
+    // const handleSearch = (searchValue) => {
+    //   setSearch(searchValue);
+    //   console.log(search);
+    // };
 
     return (
         <>
-        <input 
+        {/* <input 
             type="text"
             value={search}
             onChange={(e) => handleSearch(e.target.value)}
             placeholder="Search for a cake"
-        />
+        /> */}
         <table id="reduxAssessmentTable">
             <thead>
             <tr>
@@ -43,14 +44,15 @@ export default function GraphQLAssessmentTable() {
             </thead>
             <tbody>
             {
-                data.cakes.filter(val => {
-                    if (search == '') {
-                        return val;
-                    } else (val.name.toLowerCase().includes(search.toLowerCase())) {
-                        return val;
-                    }
+                data.cakes
+                // .filter(val => {
+                //     if (search == '') {
+                //         return val;
+                //     } else (val.name.toLowerCase().includes(search.toLowerCase())) {
+                //         return val;
+                //     }
                     
-                })
+                // })
                 .map(cake => 
                     <tr key={cake.id}>
                         <td>{cake.title}</td>
