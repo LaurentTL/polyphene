@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title":"Lemon cheesecake",
+    "description":"A cheesecake made of lemon",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/lemoncheese_cake.jpg"
+  },
+  {
+    "id": 2,
+    "title":"Victoria sponge",
+    "description":"sponge with jam",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/victoria_sponge.jpg"
+  },
+  {
+    "id": 3,
+    "title":"Carrot cake",
+    "description":"Bugs bunnys favourite",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/carrot_cake.jpg"
+  },
+  {
+    "id": 4,
+    "title":"Banana cake",
+    "description":"Banana cake is a cake prepared using banana",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/banana_cake.jpg"
+  },
+  {
+    "id": 5,
+    "title":"Birthday cake",
+    "description":"a yearly treat",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/birthday_cake.JPG"
+  },
+  {
+    "id": 6,
+    "title":"Avocado cake",
+    "description":"Avocado cake is a cake prepared using avocado",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/avocado_cake.jpg"
+  },
+  {
+    "id": 7,
+    "title":"Chocolate cake",
+    "description":"Chocolate cake is a cake flavored with melted chocolate, cocoa powder, or sometimes both.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/chocolate_cake.jpg"
+  },
+  {
+    "id": 8,
+    "title":"Clementine cake",
+    "description":"Clementine cake is a cake prepared with clementine fruit",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/clementine_cake.png"
+  },
+  {
+    "id": 9,
+    "title":"Fudge cake",
+    "description":"A fudge cake is a chocolate cake containing fudge",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/fudge_cake.jpg"
+  },
+  {
+    "id": 10,
+    "title":"Spice cake",
+    "description":"Spice cake is traditionally flavored with a mixture of spices.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/spice_cake.jpg"
+  },
+  {
+    "id": 11,
+    "title":"Jewish apple cake",
+    "description":"Jewish apple cake is a kind of dense cake made with apples and sold mostly in Pennsylvania in the United States.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/jewish_apple_cake.jpg"
+  },
+  {
+    "id": 12,
+    "title":"Plum cake",
+    "description":"Plum cake refers to a wide range of cakes made with either dried fruit or with fresh fruit.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/plum_cake.jpg"
+  },
+  {
+    "id": 13,
+    "title":"Apple cake",
+    "description":"Apple cake is a popular dessert produced with the main ingredient of apples.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/apple_cake.JPG"
+  },
+  {
+    "id": 14,
+    "title":"Bulla cake",
+    "description":"Bulla cake is a rich Jamaican cake made with molasses and spiced with ginger and nutmeg.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/bulla_cake.jpg"
+  },
+  {
+    "id": 15,
+    "title":"Jaffa cake",
+    "description":"Jaffa Cakes are biscuit-sized cakes.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/jaffa_cake.png"
+  },
+  {
+    "id": 16,
+    "title":"Strawberry cake",
+    "description":"Strawberry cake is a crumbly bread made by strawberry.",
+    "image":"https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/strawberry_cake.jpg"
+  }
+]
