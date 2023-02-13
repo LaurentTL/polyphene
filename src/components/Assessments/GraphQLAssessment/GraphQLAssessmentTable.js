@@ -1,15 +1,6 @@
 import { useState } from 'react';
-import { gql, useQuery } from '@apollo/client';
-
-const GET_CAKES = gql`
-query GetCakes {
-    cakes {
-        description
-        id
-        image
-        title
-    }
-}`
+import { useQuery } from '@apollo/client';
+import GET_CAKES from '../../../graphql/query/query';
 
 export default function GraphQLAssessmentTable() {
 
