@@ -9,7 +9,7 @@ export default function GraphQLAssessmentTable() {
     const handleSearch = (searchValue) => {
         setSearch(searchValue);
     };
-    
+
     const { loading, error, data } = useQuery(GET_CAKES);
 
     if (loading) return 'Loading...';
@@ -38,15 +38,15 @@ export default function GraphQLAssessmentTable() {
                 .filter(cake => 
                     Object.values(cake).join('').toLowerCase().includes(search.toLowerCase())
                 )
-                .map(cake => 
+                .map((cake, index) => 
                     <tr 
-                        className={ cake.id % 2 === 0 ? `${ 'bg-blue-200' }` : {} }
+                        className={ `min-h-[140px] ${index % 2 === 0 ? `${ 'bg-blue-200' }` : {} }` }
                         key={cake.id}
                     >
-                        <td className='w-1/4'>{cake.title}</td>
-                        <td>{cake.description}</td>
-                        <td className='w-1/4'>
-                            <img src={cake.image} alt={cake.title} className="aspect-auto" />
+                        <td className='w-1/4 border border-solid border-gray-200 text-center p-3'>{cake.title}</td>
+                        <td className='border border-solid border-gray-200 text-center p-3'>{cake.description}</td>
+                        <td className='w-1/4 border border-solid border-gray-200' style={{backgroundImage: `url(${cake.image})`}}>
+                            {/* <img src={cake.image} alt={cake.title} className="aspect-auto" /> */}
                         </td>
                     </tr>
                 )
