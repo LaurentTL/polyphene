@@ -40,7 +40,7 @@ export default function GraphQLAssessmentTable() {
                 )
                 .map((cake, index) => 
                     <tr 
-                        className={ `min-h-[140px] ${index % 2 === 0 ? `${ 'bg-blue-200' }` : {} }` }
+                        className={ `h-[140px] ${index % 2 === 0 ? `${ 'bg-blue-200' }` : {} }` }
                         key={cake.id}
                     >
                         <td className='w-1/4 border border-solid border-gray-200 text-center p-3'>{cake.title}</td>
